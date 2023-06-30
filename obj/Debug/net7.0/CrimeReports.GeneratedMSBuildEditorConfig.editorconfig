@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CrimeReports
+build_property.RootNamespace = CrimeReports
+build_property.ProjectDir = /Users/sudhanshu/ASPDotNet/CrimeReports/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/sudhanshu/ASPDotNet/CrimeReports
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/CrimeReport/CrimeStats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3JpbWVSZXBvcnQvQ3JpbWVTdGF0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/CrimeReport/ErrorException.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3JpbWVSZXBvcnQvRXJyb3JFeGNlcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/CrimeReport/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3JpbWVSZXBvcnQvSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/CrimeReport/InvalidCoordinates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3JpbWVSZXBvcnQvSW52YWxpZENvb3JkaW5hdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/CrimeReport/NoDataError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3JpbWVSZXBvcnQvTm9EYXRhRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/CrimeReport/OutOfBoundsError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3JpbWVSZXBvcnQvT3V0T2ZCb3VuZHNFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sudhanshu/ASPDotNet/CrimeReports/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ly91gxha6j

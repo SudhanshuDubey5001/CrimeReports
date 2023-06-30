@@ -1,0 +1,28 @@
+﻿@model CrimeReports.Models.SummaryViewModel
+
+@{
+    ViewData["Title"] = "Crime Statistics";
+}
+
+<div>
+    @foreach (KeyValuePair<string, Dictionary<string, int>> summary in Model.Summary)
+    {
+        <h2>@summary.Key</h2>
+        <div>
+            <table class="table">
+                <tr>
+                    <th>Category</th>
+                    <th>Count</th>
+                </tr>
+
+                @foreach (KeyValuePair<string, int> item in summary.Value)
+                {
+                    <tr>
+                        <td>@item.Key</td>
+                        <td>@item.Value</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    }
+</div>

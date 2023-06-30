@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CrimeReports</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CrimeReports.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="CrimeReport" asp-action="CrimeStats">Crime Reports</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav flex" style="position:absolute;right:0">
+                    <li>
+                        <a class="data-police" href="https://data.police.uk">Data Police</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="text-center">
+            <h1 class="display-4">Crime Reports Search</h1>
+            <p>Search crime reports of any place, any date within United Kingdom</p>
+            @*JS code for creating Date picker*@
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script>$(function () {
+                    // Initialize the datepicker
+                    $("#datepicker").datepicker({
+                        dateFormat: "yy-mm",
+                        changeMonth: true,
+                        changeYear: true,
+                        showButtonPanel: true,
+                        maxDate: new Date(),
+                        onClose: function (dateText, inst) {
+                            // Parse the selected date and set it to the input value
+                            var year = inst.selectedYear;
+                            var month = ("0" + (inst.selectedMonth + 1)).slice(-2);
+                            $(this).val(year + "-" + month);
+                        }
+                    });
+                });</script>
+
+            <form action="/CrimeReport/CrimeStats" method="POST">
+                <label for="latitude">Latitude</label>
+                <input placeholder="Enter a value between 49.84 and 58.67" type="text" id="latitude" name="latitude" required>
+
+                <label for="longitude">Longitude</label>
+                <input placeholder="Enter a value between -8.65 and 1.76" type="text" id="longitude" name="longitude" required>
+
+                <label for="datepicker">Date</label>
+                <input placeholder="YYYY-MM" type="text" id="datepicker" name="date" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
